@@ -7,9 +7,7 @@ RSpec.describe 'Creating a book', type: :feature do
     fill_in 'Title', with: 'Percy Jackson'
     fill_in 'Author', with: 'Rick Riordan'
     fill_in 'Price', with: 20
-    select '2013', :from => 'selectYear'
-    select '8', :from => 'selectMonth'
-    select '7', :from => 'selectDay'
+    fill_in 'Date Published', with: '2013-08-07'
     click_on 'Create Book'
     visit books_path
     expect(page).to have_content('Percy Jackson')

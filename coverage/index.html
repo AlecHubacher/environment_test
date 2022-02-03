@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-02-03T20:47:40+00:00">2022-02-03T20:47:40+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-02-03T21:14:41+00:00">2022-02-03T21:14:41+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="red">
-  72.97%
+  74.31%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.74
+         0.75
        </span>
     </span> hits/line
     )
@@ -43,11 +43,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>111</b> relevant lines,
+    <b>109</b> relevant lines,
     <span class="green"><b>81</b> lines covered</span> and
-    <span class="red"><b>30</b> lines missed. </span>
+    <span class="red"><b>28</b> lines missed. </span>
     (<span class="red">
-  72.97%
+  74.31%
 </span>
 )
   </div>
@@ -303,12 +303,12 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#7ac31de8ec515661c0137ec9791b37f5a54b007b" class="src_link" title="spec/feature/integration_spec.rb">spec/feature/integration_spec.rb</a></td>
-            <td class="red strong cell--number t-file__coverage">50.00 %</td>
-            <td class="cell--number">21</td>
-            <td class="cell--number">16</td>
+            <td class="red strong cell--number t-file__coverage">57.14 %</td>
+            <td class="cell--number">19</td>
+            <td class="cell--number">14</td>
             <td class="cell--number">8</td>
-            <td class="cell--number">8</td>
-            <td class="cell--number">0.50</td>
+            <td class="cell--number">6</td>
+            <td class="cell--number">0.57</td>
             
           </tr>
         
@@ -4263,7 +4263,7 @@
     <h3>spec/feature/integration_spec.rb</h3>
     <h4>
       <span class="red">
-  50.0%
+  57.14%
 </span>
 
       lines covered
@@ -4272,9 +4272,9 @@
     
 
     <div class="t-line-summary">
-      <b>16</b> relevant lines.
+      <b>14</b> relevant lines.
       <span class="green"><b>8</b> lines covered</span> and
-      <span class="red"><b>8</b> lines missed.</span>
+      <span class="red"><b>6</b> lines missed.</span>
     </div>
 
     
@@ -4390,7 +4390,7 @@
 
             
 
-            <code class="ruby">    select &#39;2013&#39;, :from =&gt; &#39;selectYear&#39;</code>
+            <code class="ruby">    fill_in &#39;Date Published&#39;, with: &#39;2013-08-07&#39;</code>
           </li>
         </div>
       
@@ -4401,7 +4401,7 @@
 
             
 
-            <code class="ruby">    select &#39;8&#39;, :from =&gt; &#39;selectMonth&#39;</code>
+            <code class="ruby">    click_on &#39;Create Book&#39;</code>
           </li>
         </div>
       
@@ -4412,7 +4412,7 @@
 
             
 
-            <code class="ruby">    select &#39;7&#39;, :from =&gt; &#39;selectDay&#39;</code>
+            <code class="ruby">    visit books_path</code>
           </li>
         </div>
       
@@ -4423,7 +4423,7 @@
 
             
 
-            <code class="ruby">    click_on &#39;Create Book&#39;</code>
+            <code class="ruby">    expect(page).to have_content(&#39;Percy Jackson&#39;)</code>
           </li>
         </div>
       
@@ -4434,7 +4434,7 @@
 
             
 
-            <code class="ruby">    visit books_path</code>
+            <code class="ruby">    expect(page).to have_content(&#39;Rick Riordan&#39;)</code>
           </li>
         </div>
       
@@ -4445,7 +4445,7 @@
 
             
 
-            <code class="ruby">    expect(page).to have_content(&#39;Percy Jackson&#39;)</code>
+            <code class="ruby">    expect(page).to have_content(&#39;20&#39;)</code>
           </li>
         </div>
       
@@ -4456,34 +4456,12 @@
 
             
 
-            <code class="ruby">    expect(page).to have_content(&#39;Rick Riordan&#39;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="17">
-            
-            
-
-            
-
-            <code class="ruby">    expect(page).to have_content(&#39;20&#39;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="18">
-            
-            
-
-            
-
             <code class="ruby">    expect(page).to have_content(&#39;2013-08-07&#39;)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="19">
+          <li class="never" data-hits="" data-linenumber="17">
             
             
 
@@ -4494,7 +4472,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="20">
+          <li class="never" data-hits="" data-linenumber="18">
             
             
 
@@ -4505,7 +4483,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="21">
+          <li class="never" data-hits="" data-linenumber="19">
             
             
 

@@ -11,6 +11,11 @@ RSpec.describe 'Creating a book', type: :feature do
     click_on 'Create Book'
     visit books_path
     expect(page).to have_content('JK')
+    expect(page).to have_content('Rick Riordan')
+    expect(page).to have_content('20')
+    expect(page).to have_content('2013-10-17')
+
 
   end
 end
+

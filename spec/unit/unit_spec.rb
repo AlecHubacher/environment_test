@@ -1,7 +1,6 @@
 # location: spec/unit/unit_spec.rb
 require 'rails_helper'
 
-# ---------UNIT TEST FOR ALL ATTRIBUTES-------------------
 
 
 RSpec.describe Book, type: :model do
@@ -16,15 +15,15 @@ RSpec.describe Book, type: :model do
   it 'is not valid without a title' do
     subject.title = nil
     expect(subject).not_to be_valid
-
+  end
   it 'is not valid without a author' do
     subject.author = nil
     expect(subject).not_to be_valid
-
+  end
   it 'is not valid without a price' do
     subject.price = nil
     expect(subject).not_to be_valid
-
+  end
   it 'is not valid without a published_date' do
     subject.published_date = nil
     expect(subject).not_to be_valid

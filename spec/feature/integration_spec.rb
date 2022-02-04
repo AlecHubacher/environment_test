@@ -4,10 +4,10 @@ require 'rails_helper'
 RSpec.describe 'Creating a book', type: :feature do
   scenario 'valid inputs' do
     visit new_book_path
-    fill_in 'Title', with: 'Percy Jackson'
+    fill_in 'Title', with: 'JK'
     click_on 'Create Book'
     visit books_path
-    expect(page).to have_content('Percy Jackson')
+    expect(page).to have_content('JK')
 
   end
 end
@@ -26,7 +26,7 @@ end
 RSpec.describe 'Creating a book', type: :feature do
   scenario 'valid inputs' do
     visit new_book_path
-    fill_in 'Price', with: 20
+    fill_in 'Price', with: '20'
     click_on 'Create Book'
     visit books_path
     expect(page).to have_content('20')
@@ -37,10 +37,10 @@ end
 RSpec.describe 'Creating a book', type: :feature do
   scenario 'valid inputs' do
     visit new_book_path
-    fill_in 'Published date', with: '2013-08-07'
+    fill_in 'Published date', with: '2013-10-17'
     click_on 'Create Book'
     visit books_path
-    expect(page).to have_content('2013-08-07')
+    expect(page).to have_content('2013-10-17')
 
   end
 end
